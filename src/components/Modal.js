@@ -77,9 +77,9 @@ const CloseModalButton = styled(MdClose)`
   z-index: 10;
 `;
 
-const fruitVals = ['apple', 'apricot', 'banana', 'blueberry', 'cherry', 'guava', 'lemon', 'mango', 'orange', 'pear', 'pineapple', 'raspberry', 'strawberry', 'tomato', 'watermelon'];
+const fruitVals = ['Apple', 'Apricot', 'Banana', 'Blueberry', 'Cherry', 'Guava', 'Lemon', 'Mango', 'orange', 'pear', 'pineapple', 'raspberry', 'strawberry', 'tomato', 'watermelon'];
 
-export const Modal = ({showModal, setShowModal, imageID, info, genus}) => {
+export const Modal = ({showModal, setShowModal, imageID, setImageID, info, setInfo}) => {
     return (
         <>
         {showModal ? (
@@ -90,7 +90,7 @@ export const Modal = ({showModal, setShowModal, imageID, info, genus}) => {
                         <h1>{info.name}</h1>
                         <p>Order: {info.order}</p>
                         <p>Family: {info.family}</p>
-                        <p>Genus: {genus}</p> 
+                        <p>Genus: {info.genus}</p> 
 
                         <h2>Nutrition Facts per 100 grams </h2>
                          <ul>

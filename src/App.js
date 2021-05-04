@@ -95,7 +95,7 @@ function App() {
         <Button id="13" onClick={openModal}> <Fruit src={Images[13]}/></Button>
         <Button id="14" onClick={openModal}> <Fruit src={Images[14]}/></Button>
       </Grid>
-      <Modal showModal={showModal} setShowModal={setShowModal} imageID={imageID} info={info}/>
+      <Modal showModal={showModal} setShowModal={setShowModal} imageID={imageID} setImageID={setImageID} info={info} setInfo={setInfo}/>
       <GlobalStyle />
     </Container>
     </>
