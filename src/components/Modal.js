@@ -3,8 +3,14 @@ import styled from 'styled-components'
 import {MdClose} from 'react-icons/md'
 import Images from '../Images'
 
+export const media = {
+  small: '@media(max-width: 960px)'
+}
+
 
 const Background = styled.div`
+  width: 100%;
+  height; 100%;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -30,7 +36,13 @@ const ModalImg = styled.img`
     width: 20em;
     height: 20em;
     object-fit: cover;
-    border-radius: 10px
+    border-radius: 10px;
+    ${media.small} {
+      width: 13.5em;
+      height: 13.5em;
+      object-fit: cover;
+      border-radius: 10px;
+    }
 `;
 
 const ModalContent = styled.div`
@@ -48,6 +60,9 @@ const ModalContent = styled.div`
     background: #141414;
     color: #fff;
     border: none;
+  }
+  h2 {
+    text-align: center;
   }
 `;
 

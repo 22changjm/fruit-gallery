@@ -5,9 +5,13 @@ import { Modal } from './components/Modal'
 import { GlobalStyle } from './globalStyles'
 import { MdSystemUpdate } from 'react-icons/md'
 
+export const media = {
+    small: '@media(max-width: 960px)'
+}
+
+
 const Container = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 40px;
@@ -40,9 +44,18 @@ border: none;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, minmax(150px, 293px));
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   grid-gap: 28px;
+  max-width: 960px;
+
+  ${media.small} {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    grid-gap: 28px;
+    max-width: 960px;
+  }
 `
 
 
