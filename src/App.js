@@ -62,20 +62,17 @@ function App() {
   const fruitVals = ['apple', 'apricot', 'banana', 'blueberry', 'cherry', 'guava', 'lemon', 'mango', 'orange', 'pear', 'pineapple', 'raspberry', 'strawberry', 'tomato', 'watermelon'];
   const [showModal, setShowModal] = useState(false);
   const [imageID, setImageID] = useState(0);
-  const [info, setInfo] = useState({})
+  const [info, setInfo] = useState({nutritions: ""});
 
-  const retrieveData = async () => {
-    const response = await fetch(`https://pacific-scrubland-02722.herokuapp.com/https://fruityvice.com/api/fruit/${fruitVals[imageID]}`);
-    const data = await response.json();
-    setInfo(data);
-    setShowModal(prev=> !prev)
-  }
-
-  const openModal = (event) => {
+  const openModal = async (event) => {
       setImageID(parseInt(event.currentTarget.id));
-      retrieveData()
-    };
-
+      const response = await fetch(`https://pacific-scrubland-02722.herokuapp.com/https://fruityvice.com/api/fruit/${fruitVals[imageID]}`);
+      const data = await response.json();
+      setInfo(data);
+  }
+  useEffect(() => {
+    info.nutritions && setShowModal(prev=> !prev);
+  }, [info])
 
   return (
     <>

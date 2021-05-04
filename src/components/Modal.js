@@ -79,7 +79,7 @@ const CloseModalButton = styled(MdClose)`
 
 const fruitVals = ['apple', 'apricot', 'banana', 'blueberry', 'cherry', 'guava', 'lemon', 'mango', 'orange', 'pear', 'pineapple', 'raspberry', 'strawberry', 'tomato', 'watermelon'];
 
-export const Modal = ({showModal, setShowModal, imageID, info}) => {
+export const Modal = ({showModal, setShowModal, imageID, info, genus}) => {
     return (
         <>
         {showModal ? (
@@ -90,16 +90,16 @@ export const Modal = ({showModal, setShowModal, imageID, info}) => {
                         <h1>{info.name}</h1>
                         <p>Order: {info.order}</p>
                         <p>Family: {info.family}</p>
-                        <p>Genus: {info.genus}</p> 
+                        <p>Genus: {genus}</p> 
 
                         <h2>Nutrition Facts per 100 grams </h2>
-                        <ul>
+                         <ul>
                             <li> {info.nutritions.calories} Calories </li>
                             <li>{info.nutritions.carbohydrates} grams of Carbohydrates </li>
                             <li>{info.nutritions.protein} grams of Protein </li>
                             <li> {info.nutritions.fat} grams of Fat </li>
                             <li> {info.nutritions.sugar} grams of Sugar </li>
-                        </ul>
+                        </ul> 
                         
                     </ModalContent>
                     <CloseModalButton aria-label='Close modal' onClick={() => setShowModal (prev => !prev)} />
