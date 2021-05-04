@@ -1,19 +1,34 @@
 {
   "files": {
-    "main.js": "/fruit-gallery/static/js/main.d4722db4.chunk.js",
-    "main.js.map": "/fruit-gallery/static/js/main.d4722db4.chunk.js.map",
+    "main.js": "/fruit-gallery/static/js/main.4bcff2a3.chunk.js",
+    "main.js.map": "/fruit-gallery/static/js/main.4bcff2a3.chunk.js.map",
     "runtime-main.js": "/fruit-gallery/static/js/runtime-main.cf6ca8fd.js",
     "runtime-main.js.map": "/fruit-gallery/static/js/runtime-main.cf6ca8fd.js.map",
-    "static/js/2.82dda2aa.chunk.js": "/fruit-gallery/static/js/2.82dda2aa.chunk.js",
-    "static/js/2.82dda2aa.chunk.js.map": "/fruit-gallery/static/js/2.82dda2aa.chunk.js.map",
+    "static/js/2.c20e777d.chunk.js": "/fruit-gallery/static/js/2.c20e777d.chunk.js",
+    "static/js/2.c20e777d.chunk.js.map": "/fruit-gallery/static/js/2.c20e777d.chunk.js.map",
     "static/js/3.d1591543.chunk.js": "/fruit-gallery/static/js/3.d1591543.chunk.js",
     "static/js/3.d1591543.chunk.js.map": "/fruit-gallery/static/js/3.d1591543.chunk.js.map",
     "index.html": "/fruit-gallery/index.html",
-    "static/js/2.82dda2aa.chunk.js.LICENSE.txt": "/fruit-gallery/static/js/2.82dda2aa.chunk.js.LICENSE.txt"
+    "static/js/2.c20e777d.chunk.js.LICENSE.txt": "/fruit-gallery/static/js/2.c20e777d.chunk.js.LICENSE.txt",
+    "static/media/apple.c9c52f4b.png": "/fruit-gallery/static/media/apple.c9c52f4b.png",
+    "static/media/apricot.b50e6cf4.png": "/fruit-gallery/static/media/apricot.b50e6cf4.png",
+    "static/media/banana.77ff416c.png": "/fruit-gallery/static/media/banana.77ff416c.png",
+    "static/media/blueberry.b1ca1bac.png": "/fruit-gallery/static/media/blueberry.b1ca1bac.png",
+    "static/media/cherry.0f312e11.png": "/fruit-gallery/static/media/cherry.0f312e11.png",
+    "static/media/guava.eab1c2f3.png": "/fruit-gallery/static/media/guava.eab1c2f3.png",
+    "static/media/lemon.d7682422.png": "/fruit-gallery/static/media/lemon.d7682422.png",
+    "static/media/mango.fc9b6f3c.png": "/fruit-gallery/static/media/mango.fc9b6f3c.png",
+    "static/media/orange.f9102c5c.png": "/fruit-gallery/static/media/orange.f9102c5c.png",
+    "static/media/pear.3be61fd9.png": "/fruit-gallery/static/media/pear.3be61fd9.png",
+    "static/media/pineapple.2859e8b7.png": "/fruit-gallery/static/media/pineapple.2859e8b7.png",
+    "static/media/raspberry.b22091a8.png": "/fruit-gallery/static/media/raspberry.b22091a8.png",
+    "static/media/strawberry.496d507c.png": "/fruit-gallery/static/media/strawberry.496d507c.png",
+    "static/media/tomato.57b87dae.png": "/fruit-gallery/static/media/tomato.57b87dae.png",
+    "static/media/watermelon.b859c43a.png": "/fruit-gallery/static/media/watermelon.b859c43a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cf6ca8fd.js",
-    "static/js/2.82dda2aa.chunk.js",
-    "static/js/main.d4722db4.chunk.js"
+    "static/js/2.c20e777d.chunk.js",
+    "static/js/main.4bcff2a3.chunk.js"
   ]
 }
