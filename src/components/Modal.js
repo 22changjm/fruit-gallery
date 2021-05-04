@@ -77,7 +77,7 @@ const CloseModalButton = styled(MdClose)`
   z-index: 10;
 `;
 
-const fruitVals = ['Apple', 'Apricot', 'Banana', 'Blueberry', 'Cherry', 'Guava', 'Lemon', 'Mango', 'Orange', 'Pear', 'Pineapple', 'Raspberry', 'Strawberry', 'Tomato', 'Watermelon'];
+const fruitVals = ['apple', 'apricot', 'banana', 'blueberry', 'cherry', 'guava', 'lemon', 'mango', 'orange', 'pear', 'pineapple', 'raspberry', 'strawberry', 'tomato', 'watermelon'];
 
 export const Modal = ({showModal, setShowModal, imageID, info}) => {
     return (
@@ -87,7 +87,7 @@ export const Modal = ({showModal, setShowModal, imageID, info}) => {
                 <ModalWrapper showModal={showModal}>
                     <ModalImg src={Images[imageID]}/>
                     <ModalContent>
-                        <h1>{fruitVals[imageID]}</h1>
+                        <h1>{info.name}</h1>
                         <p>Order: {info.order}</p>
                         <p>Family: {info.family}</p>
                         <p>Genus: {info.genus}</p> 

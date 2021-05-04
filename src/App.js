@@ -3,7 +3,6 @@ import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import { Modal } from './components/Modal'
 import { GlobalStyle } from './globalStyles'
-import { MdSystemUpdate } from 'react-icons/md'
 
 export const media = {
     small: '@media(max-width: 960px)'
@@ -60,7 +59,7 @@ const Grid = styled.div`
 
 
 function App() {
-  const fruitVals = ['Apple', 'Apricot', 'Banana', 'Blueberry', 'Cherry', 'Guava', 'Lemon', 'Mango', 'Orange', 'Pear', 'Pineapple', 'Raspberry', 'Strawberry', 'Tomato', 'Watermelon'];
+  const fruitVals = ['apple', 'apricot', 'banana', 'blueberry', 'cherry', 'guava', 'lemon', 'mango', 'orange', 'pear', 'pineapple', 'raspberry', 'strawberry', 'tomato', 'watermelon'];
   const [showModal, setShowModal] = useState(false);
   const [imageID, setImageID] = useState(0);
   const [info, setInfo] = useState({})
@@ -95,6 +94,9 @@ function App() {
         <Button id="9" onClick={openModal}> <Fruit src={Images[9]}/></Button> 
         <Button id="10" onClick={openModal}> <Fruit src={Images[10]}/></Button>
         <Button id="11" onClick={openModal}> <Fruit src={Images[11]}/></Button>
+        <Button id="12" onClick={openModal}> <Fruit src={Images[12]}/></Button>
+        <Button id="13" onClick={openModal}> <Fruit src={Images[13]}/></Button>
+        <Button id="14" onClick={openModal}> <Fruit src={Images[14]}/></Button>
       </Grid>
       <Modal showModal={showModal} setShowModal={setShowModal} imageID={imageID} info={info}/>
       <GlobalStyle />
